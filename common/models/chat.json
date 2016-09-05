@@ -1,0 +1,32 @@
+{
+  "name": "chat",
+  "plural": "/chat/",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "messages": {
+      "type": [
+        "string"
+      ]
+    },
+    "color": {
+      "type": "string"
+    },
+    "users": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
